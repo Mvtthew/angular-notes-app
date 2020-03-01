@@ -1,0 +1,8 @@
+<div class="row">
+	<div class="col-lg-4 mt-3" *ngFor="let note of notesList">
+		<app-note [note]="note" (emmit)="ngOnInit()"></app-note>
+	</div>
+	<div class="col-lg-4 mt-3">
+		<app-note-add (emmit)="ngOnInit()"></app-note-add>
+	</div>
+</div>
